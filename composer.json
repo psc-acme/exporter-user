@@ -1,0 +1,39 @@
+{
+    "name": "psc-acme/exporter-user",
+    "description": "Package exporter-user for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ExporterUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "firebase/php-jwt": "^6.0",
+        "symfony/uid": "^7.0",
+        "psc-acme/importer-auth": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^1.0",
+        "vimeo/psalm": "^5.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
